@@ -1,18 +1,28 @@
 Exercice 1 :
 Debut
-    # Une foncion saisie_fonction_logique qui contient🔰 :
-        - nombre_variables <- demander à l'utilisateur de entrer une nombre de variable utiliser dans le tableau de verité [exemple: 3]
-        - fonction_logique <- demander à l'utilisateur de entrer l'expression de la fonction logique du tableau [exemple: (a and b) or (not b and c) or (a and not c)]
-    # Une foncion verite qui utilise en parametre  le nombre_variables et fonction_logique et qui contient🔰 :
+    # Définir une fonction `saisie_fonction_logique` qui contenant🔰 :
+        - nombre_variables <- Demande à l'utilisateur le nombre de variables et. [exemple: 3]
+        - fonction_logique <- Demande à l'utilisateur la fonction logique. [exemple: (a and b) or (not b and c) or (a and not c)]
+    # Définir une fonction `verite` qui prend en paramètres le nombre de variables et la fonction logique dont on a🔰 :
         - tableau de vérité avec :
-            - header est l'entête du tableau de vérité dont on affiche le nom du variable utiliser
-            - row continet tous les valeur true et false qui est convertir en 1 et 0 respectivement. Ainsi les valeurs sont depend de nombre de variable entrer par l'utilisateur grace à la fonction generate_truth_values qu'on crée plus tard
-        - fX qui evalue le fonction_logique entrer par l'utilisateur et qui affiche dans le tableau de vérité
-        - forme canonique dont :
+            - header <- Générer l'en-tête de la table de vérité.
+            - Pour chaque combinaison de valeurs de vérité possibles :
+                - fX <- Évaluer la fonction logique pour ces valeurs.
+                - row <- Afficher la ligne de la table de vérité correspondante.
+        - Calculer les formes canoniques dont :
             - si fX <- true ou 1 alors ajouter le valeur de fX dans form_canonique_1
             - sinon alors ajouter le valeur de fX dans form_canonique_2
-    # Une foncion operator qui utilise en parametre le nombre_variables et qui contient deux condition🔰 :
+        - Appeler la fonction `operator` pour afficher les opérations logiques.
+        - Afficher les résultats des formes canoniques.
+    # Définir une fonction `generate_truth_values` qui :
+        - génère toutes les combinaisons possibles de valeurs de vérité pour un nombre donné de variables.
+    # Définir une fonction `operator` qui prend en paramètre le nombre de variables🔰 :
         - si nombre_variables <- 2 alors : afficher simplement ab et ¬ba
         - sinon si nombre_variables <- 3 alors : afficher ab, ¬bc et a¬c
         - sinon n'affiche rien
+    # Appeler la fonction `saisie_fonction_logique` pour obtenir le nombre de variables et la fonction logique.
+    # Appeler la fonction `verite` avec le nombre de variables et la fonction logique obtenus.
+    # 
 Fin
+
+Cet algorithme permet de saisir une fonction logique, de générer sa table de vérité, de calculer ses formes canoniques et d'afficher les opérations logiques correspondantes.
